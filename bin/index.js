@@ -1,0 +1,1 @@
+export { SwiperLight, SwiperSlideLight } from '../src/index.jsx';

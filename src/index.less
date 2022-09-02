@@ -1,0 +1,78 @@
+.swiperBox {
+  position: relative;
+  overflow: hidden;
+  .swiperListBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .swiperList {
+      transition: transform 0.5s;
+      flex-shrink: 0;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      transform: translateX(-5160px);
+      transform-style: preserve-3d;
+      backface-visibility: hidden;
+      -webkit-transform-style: preserve-3d;
+      -webkit-backface-visibility: hidden;
+      .SwiperSlideSelf {
+        width: 100%;
+        margin-right: 20px;
+        object-fit: cover;
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+        -webkit-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+      }
+      .testImg {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    }
+    .flexColumns {
+      flex-direction: column;
+    }
+  }
+  .flexColumns {
+    flex-direction: column;
+  }
+
+  .swiperPage {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &>div {
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      background: #D9D9D9;
+      opacity: 1;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+    &-active {
+      background: #FF7600 !important;
+    }
+  }
+
+  .leftArrowSwiper {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%) rotateZ(180deg);
+    cursor: pointer;
+  }
+  .rightArrowSwiper {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(0, -50%);
+    cursor: pointer;
+  }
+}
